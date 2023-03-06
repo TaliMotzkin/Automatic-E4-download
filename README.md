@@ -39,13 +39,13 @@ Citation - Benedek, M. & Kaernbach, C. (2010). A continuous measure of phasic el
 
 With this tool we converted EDA to SCL. 
 
-  #8.a download the Ledalab software and Matlab.
+        #8.a download the Ledalab software and Matlab.
+        
+        #8.b in Ledalab->main->import->gettext2data file, change to sr = 4 (for default 4 Hz EDA rate)
   
-  #8.b in Ledalab->main->import->gettext2data file, change to sr = 4 (for default 4 Hz EDA rate)
+        #8.c in Matlab command window run: Ledalab('txt file path\', 'open', 'text2', 'analyze','CDA', 'optimize',1) which makes mat files for all the txt samples
   
-  #8.c in Matlab command window run: Ledalab('txt file path\', 'open', 'text2', 'analyze','CDA', 'optimize',1) which makes mat files for all the txt samples
-  
-  #8.d run the file for_files.m which saves xls files of SCL
+        #8.d run the file for_files.m which saves xls files of SCL
 
 
 
