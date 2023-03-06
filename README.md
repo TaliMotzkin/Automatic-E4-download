@@ -29,6 +29,21 @@ The noise files are aggregated to 5 seconds, and if there is a noise the five se
 ##6 "Cleaning the EDA files" - and also making statistics of them. 
 Block 4, and 5 checks how much data (in percentage) of the 322 files are coverd with artifacts. For that I made a table "try_stat.csv" that calculates that in the binary and multiclasse modes. By that (https://onlinelibrary.wiley.com/doi/10.1111/psyp.13420) article we decided to ignore files with more then 25% artifacts, and look at the both modes. The rest of the blocks make clean EDA files - binary and in multiclass.
 
+##7 'Preparing for Matlab' - 
+To prepare the Binary and Multyclass files for Matlab process from EDA to SCL using Ledalab, We need to convert the CSV files 
+to TXT files with only one column -- The EDA data column. 
+
+##8 Ledalab 
+URL - http://www.ledalab.de/download/Analysis%20of%20EDA%20data%20using%20Ledalab.pdf
+Citation - Benedek, M. & Kaernbach, C. (2010). A continuous measure of phasic electrodermal activity. Journal of Neuroscience Methods, 190, 80-91.
+With this tool we converted EDA to SCL. 
+
+  #8.a download the Ledalab software and Matlab.
+  #8.b in Ledalab->main->import->gettext2data file, change to sr = 4 (for default 4 Hz EDA rate)
+  #8.c in Matlab command window run: Ledalab('txt file path\', 'open', 'text2', 'analyze','CDA', 'optimize',1) which makes mat files for all the txt samples
+  #8.d run the file for_files.m which saves xls files of SCL
+
+
 
 
 
