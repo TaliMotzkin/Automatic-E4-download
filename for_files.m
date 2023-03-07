@@ -8,7 +8,3 @@ for i = 1:length(myFiles)
     newStr = strcat(strrep(name,"EDA","SCL"), "_bin") %or mul
     xlswrite(newStr,mat.analysis.tonicData')
 end
-
-
-
-
