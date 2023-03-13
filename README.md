@@ -47,6 +47,10 @@ With this tool we converted EDA to SCL.
   
         #8.d run the file for_files.m which saves xls files of SCL
 
+##9 'SCL_Average_Norm' - making statistical calculations for SCL binary and milticlass files.
+The calculations are: Kurtosis, Skewnwss, Mean, Median, Standart-Deviation. 
+Now there is new_notes_2 updated with all the data.
+
 
 
 
