@@ -49,7 +49,12 @@ With this tool we converted EDA to SCL.
 
 ##9 'SCL_Average_Norm' - making statistical calculations for SCL binary and milticlass files.
 The calculations are: Kurtosis, Skewnwss, Mean, Median, Standart-Deviation. 
-Now there is new_notes_2 updated with all the data.
+Now there is new_notes_2 updated with all the data. 
+
+##10 'Kestrel Measures' - to each subject, calculate the averages of the meteorological conditions by the right time and date.
+The measures are: Wind speed (m/s), Real humidity (%), Air Temprature (celsius), Globe Temprature (celsius).
+Now there is new_notes_4 (new_notes_3 was cleaned manually) updated with all the data.
+
 
 
 
