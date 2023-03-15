@@ -55,6 +55,9 @@ Now there is new_notes_2 updated with all the data.
 The measures are: Wind speed (m/s), Real humidity (%), Air Temprature (celsius), Globe Temprature (celsius).
 Now there is new_notes_4 (new_notes_3 was cleaned manually) updated with all the data.
 
+##11 'Tmrt' - calculate the mean radiant temprature using this site: https://comfort.cbe.berkeley.edu/
+
+
 
 
 
