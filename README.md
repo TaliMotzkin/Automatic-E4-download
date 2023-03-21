@@ -59,7 +59,10 @@ Now there is new_notes_4 (new_notes_3 was cleaned manually) updated with all the
 
 ##12 Returning back to SCL - "Recalculating the Noisy EDA files (with more then 25% noise artifacts)". We thought it will be intresting to see how the "bad" samples are influencing the research so I went back to their noise files, found the bad files, cleaned the EDA, turned it into SCL and calculated statistics.
 
-##13 'Merging the questionnaires' - merging to each subject number its demographical data like: Age, Hight..
+##13 'Merging the questionnaires' - merging to each subject number its demographical data like: Age, Height..
+
+##14 'PET' - calculating the PET of each subject using pyautogui module and Rayman software. https://www.urbanclimate.net/rayman/rayman.htm
+
 
 
 
