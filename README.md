@@ -61,9 +61,37 @@ Now there is new_notes_4 (new_notes_3 was cleaned manually) updated with all the
 
 ##13 'Merging the questionnaires' - merging to each subject number its demographical data like: Age, Height..
 
-##14 'PET' - calculating the PET of each subject using pyautogui module and Rayman software. https://www.urbanclimate.net/rayman/rayman.htm
+##14 'PET' - calculating the PET of each subject using pyautogui module and Rayman software. https://www.urbanclimate.net/rayman/rayman.htm (the cloths score was calculated manually)
 
+##15 Manual step - For calculating the % of vegetation view, we first tried to use CNN (U-NET) to detect vegetated pixels via semantic segmentation method. I couldn't find labled fish eyed photo sets to train them on the model, so it didn't worked well with the "normal" data sets I downloaded from the internet. So we did a Semi-Automated process in the ArcGis Pro software. There the process was:
 
+        #A. For every site - train a non vegetated and vagetated pixels using "classification tools".
+        
+        #B. Train Support Vector Machine tool (using the lables from step A) to get the .ecd file.
+        
+        #C. Use "raster classifier" tool to get the 2 classes raster. 
+        
+        #D. Use "clip raster" tool to get only the circled fish-eye picture.
+        
+        #E. With "pixel editor" edit the mis-matched pixels, save the new rater and calculate the amount of green pixels out of the total pixels (which are 1424767).
+        
+        #F. Add a new column of "other picture number" (the picture numbers of the backview of the subjects) manualy because we start to write this data only at the last subjects (the rest of them was recaptured later or acomplished from the pictures we already had).
+        
+        #G. Add a new column of "vegetation_percent_180" that we filled manualy with the data that came out from the ArcGis Pro process. We added a VLOOKUP sheet that contains all the pictures numbers (front and back view) with their frontal view percentage. After few itterations we decided to add also the actual number of pixels for both of the images (Vegetation_Pixels, Other_Vegetation_Pixels) to be more flexible with the "green view" calculations. Then we added the 360 degress view column called "Vegetation_Percent_360" and the calculation is based on equation 1 in the article: Li, X., Zhang, C., Li, W., Ricard, R., Meng, Q., & Zhang, W. (2015). Assessing street-level urban greenery using Google Street View and a modified green view index. Urban Forestry & Urban Greening, 14(3), 675-685.
+        
+        #H. We added "Duration_Before_Ex" that came manualy from "Notes" excell, indicating the pre-experiment duration time that the subject stayed in the place. 
+        
+        #I. For the statistical part we aggregated the Thermal answers from 5\7 bins into 3 bins (using excell if statements). That is in Comfort: 4,3 = 3 | 2 = 2 | 1,0 = 1. In Sensation: 0,-1,-2 = 0 | 1 = 1 | 3,2 =2. In Preference: -2,-3 = -2 | -1 = -1 | 0,1,2,3 = 0. It is crusial to note that we devided the groups to those bins base on the frequancy of each thermal score.
+        
+        #J. For future "outlier" testing we calculated by the Z-score method us suggested: Rincón-Martínez, J. C. (2023). Basic methods used for data analysis in adaptive thermal comfort studies. Ingeniería, investigación y tecnología, 24(1). We calculated them to the: SCL scores\PET\thermal assasements.
+
+        #K. We then cleaned the un-named columns and opened a new sheet "cleaner".
+
+##16 'General data and Experiments' - in this notebook you will find general calculations for descriptive statistics, algorithm for finding vegetation groups devidings (implemented in R in the next step - 17) and experiments on the data to see general correlations.
+
+##17 'Ordinal_Regression' - R studio file. 
+        
+        ‏
 
 
 
