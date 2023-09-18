@@ -89,7 +89,11 @@ Now there is new_notes_4 (new_notes_3 was cleaned manually) updated with all the
 
 ##16 'General data and Experiments' - in this notebook you will find general calculations for descriptive statistics, algorithm for finding vegetation groups devidings (implemented in R in the next step - 17) and experiments on the data to see general correlations.
 
-##17 'Ordinal_Regression' - R studio file. 
+##17 'Ordinal_Reg' - R studio file. This is the first file who calculates statistical results. First, we used "cleaner" sheet in new_notes_8 to calculate the odds ratio of the thermal answers in the whole possible vegetation groups as PET changes. We found out a group of outliers that reduce the mean PET of the low veg groups. Therefore, we eliminated the subjects in low veg groups (bellow 10% of vegetation view) who had a PET lower than 30 degrees. The subjects numbers described in the R file. Then, I oppened a new sheet "cleaner2" without the low PET + low veg subjects and did a new calculations od odds ratio. 
+The graphs are copied to the new sheet "Ordinal_graphs" in the same excell. You can see graphs with only 180% frontal view and graphs that include also 50% back view or full back view. 
+To calculate the probability of aggregated vegetation groups I oppened 3 new sheets, that roughly seperated to 3 vegetation groups. low veg= 0-10-C (contains subject with frontal view of 0 to 10 % of vegetation), med veg = 10-40-C, high veg 40-74-C. to each group I show the probabilities of each thermal answer in each scale. 
+
+##18 'SCL' - R studio file.
         
         ‏
 
