@@ -75,13 +75,13 @@ Now there is new_notes_4 (new_notes_3 was cleaned manually) updated with all the
         
         #E. With "pixel editor" edit the mis-matched pixels, save the new rater and calculate the amount of green pixels out of the total pixels (which are 1424767).
         
-        #F. Add a new column of "other picture number" (the picture numbers of the backview of the subjects) manualy because we start to write this data only at the last subjects (the rest of them was recaptured later or acomplished from the pictures we already had).
+        #F. Add a new column of "other picture number" (the picture numbers of the backview of the subjects) manualy because we start to write this data only at the last subjects (the rest of them was recaptured later or acomplished from the pictures we already had) in new_notes_8.
         
         #G. Add a new column of "vegetation_percent_180" that we filled manualy with the data that came out from the ArcGis Pro process. We added a VLOOKUP sheet that contains all the pictures numbers (front and back view) with their frontal view percentage. After few itterations we decided to add also the actual number of pixels for both of the images (Vegetation_Pixels, Other_Vegetation_Pixels) to be more flexible with the "green view" calculations. Then we added the 360 degress view column called "Vegetation_Percent_360" and the calculation is based on equation 1 in the article: Li, X., Zhang, C., Li, W., Ricard, R., Meng, Q., & Zhang, W. (2015). Assessing street-level urban greenery using Google Street View and a modified green view index. Urban Forestry & Urban Greening, 14(3), 675-685.
         
         #H. We added "Duration_Before_Ex" that came manualy from "Notes" excell, indicating the pre-experiment duration time that the subject stayed in the place. 
         
-        #I. For the statistical part we aggregated the Thermal answers from 5\7 bins into 3 bins (using excell if statements). That is in Comfort: 4,3 = 3 | 2 = 2 | 1,0 = 1. In Sensation: 0,-1,-2 = 0 | 1 = 1 | 3,2 =2. In Preference: -2,-3 = -2 | -1 = -1 | 0,1,2,3 = 0. It is crusial to note that we devided the groups to those bins base on the frequancy of each thermal score.
+        #I. For the statistical part we aggregated the Thermal answers from 5\7 bins into 3 bins (using excell if statements). That is in Comfort: 4,3 = 3 | 2 = 2 | 1,0 = 1. In Sensation: 0,-1,-2 = 0 | 1 = 1 | 3,2 =2. In Preference: -2,-3 = -2 | -1 = -1 | 0,1,2,3 = 0. It is crucial to note that we divided the groups to those bins base on the frequency of each thermal score.
         
         #J. For future "outlier" testing we calculated by the Z-score method us suggested: Rincón-Martínez, J. C. (2023). Basic methods used for data analysis in adaptive thermal comfort studies. Ingeniería, investigación y tecnología, 24(1). We calculated them to the: SCL scores\PET\thermal assasements.
 
