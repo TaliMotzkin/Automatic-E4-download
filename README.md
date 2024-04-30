@@ -1,5 +1,7 @@
 # Thesis analysis
 
+In order to receive the data, please email us at motzkintali@gmail.com. If you use our code, please cite our work: #####.
+
 ##1 "Download bracelets from web".
 This is an automatic download of multiple zip files wich contains E4 data (EDA, HR, IBI, TEMP etc.), Using Selenium python library.
 
